@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2</title>
+</head>
+<body>
+    <ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+    <script>
+        let title = document.createElement("hi");
+        title.className = "pwskills";
+        title.style.fontSize="25 px";
+        title.textContent="DAnish.............";
+        console.log(title);
+        document.body.appendChild(title);
+
+        //delete
+        let ul = document.querySelector("ul");
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+        for(list of lists){
+            ul.removeChild(list);
+        }
+
+    </script>
+</body>
+</html>

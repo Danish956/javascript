@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"><span>hey</span>heyyy</p>
+    <ul>
+    <li class="tech">one</li>
+    <li class="tech">two</li>
+    <li class="tech">three</li>
+
+    </ul>
+    <h4>yoooo</h4>
+    <script>
+        let a = document.getElementById("one");
+        console.log(a.innerHTML);
+        //innerText-> ye bas kitne v tag ho uske andar a content pakrega
+        //innerHTML->ye ek tag ke anadar tag plus content sabko pakrega
+
+        //classss
+       let b = document.getElementsByClassName("tech");
+       console.log(b[2].innerText)
+       b[2].innerText = "Node JS"
+       
+       //tagg name
+       let c = document.getElementsByTagName("h4")
+       console.log(c[1].innerHTML)
+       c[2].innerText = "Danish"
+
+    </script>
+</body>
+</html>
